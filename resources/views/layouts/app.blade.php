@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{{ asset('css/var.css') }}">
     <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
     <link rel="stylesheet" href="{{ asset('css/header.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
     @stack('styles')
 
 </head>
@@ -54,8 +55,109 @@
         @yield('content') <!-- Contenido que se añadira dinamicamente -->
     </main>
 
-    <footer>
+    <footer class="footer">
+        <article class="footer__container">
+            <section class="footer__comunicate">
+                <h3 class="footer__title">Comunícate con nosotros</h3>
+                <div class="footer__frame-group">
+                    <img class="footer__icon" src="{{ asset('img/footer/message.png') }}" alt="message">
+                    <div class="footer__text-group">
+                        <h4 class="footer__subtitle">Asistencia virtual</h4>
+                        <p class="footer__description">Te atenderá las 24 hrs</p>
+                    </div>
+                </div>
+                <div class="footer__frame-group">
+                    <img class="footer__icon" src="{{ asset('img/footer/mail.png') }}" alt="mail">
+                    <div class="footer__text-group">
+                        <h4 class="footer__subtitle">Escríbenos</h4>
+                        <p class="footer__description">Estamos para ayudarte</p>
+                        <a href="#" class="footer__link--mail">ecocreations@contact.com</a>
+                    </div>
+                </div>
+                <div class="footer__frame-group">
+                    <img class="footer__icon" src="{{ asset('img/footer/phone.png') }}" alt="phone">
+                    <div class="footer__text-group">
+                        <h4 class="footer__subtitle">Llámanos</h4>
+                        <p class="footer__description">Centro de servicio al cliente en Lima y</p>
+                        <p class="footer__description">provincia: (01) 6437 000</p>
+                    </div>
+                </div>
+                <div class="footer__frame-group">
+                    <img class="footer__icon" src="{{ asset('img/footer/store.png') }}" alt="store">
+                    <div class="footer__text-group">
+                        <h4 class="footer__subtitle">Visítanos</h4>
+                        <p class="footer__description">Revisa aquí nuestros horarios y tiendas</p>
+                        <p class="footer__description">disponibles a nivel nacional</p>
+                        <a href="#" class="footer__link--mail">Ver tiendas</a>
+                    </div>
+                </div>
+            </section>
 
+            <section class="footer__map">
+                <h3 class="footer__title">Mapa</h3>
+                <div class="footer__frame-group">
+                    <a href="#" class="footer__link--enlaces">Inicio</a>
+                </div>
+                <div class="footer__frame-group">
+                    <a href="#" class="footer__link--enlaces">Productos</a>
+                </div>
+                <div class="footer__frame-group">
+                    <a href="#" class="footer__link--enlaces">Nosotros</a>
+                </div>
+                <div class="footer__frame-group">
+                    <a href="#" class="footer__link--enlaces">Contacto</a>
+                </div>
+            </section>
+
+            <section class="footer__categories">
+                <h3 class="footer__title">Categorías</h3>
+                <div class="footer__frame-group">
+                    <a href="#" class="footer__link--enlaces">Botellas</a>
+                </div>
+                <div class="footer__frame-group">
+                    <a href="#" class="footer__link--enlaces">Bolsas</a>
+                </div>
+                <div class="footer__frame-group">
+                    <a href="#" class="footer__link--enlaces">Hogar</a>
+                </div>
+                <div class="footer__frame-group">
+                    <a href="#" class="footer__link--enlaces">Accesorios</a>
+                </div>
+            </section>
+
+            <section class="footer__nosotros">
+                <figure>
+                    <img src="../img/footer/isotipo.png" alt="isotipo" width="50px" height="50px">
+                </figure>
+                <h3 class="footer__title footer__title--nosotros">ECOCREATIONS</h3>
+                <p>ECOCREATIONS S.A.C. abrió sus puertas en 2004, transformando el concepto de productos ecológicos
+                    personalizados. Fabricamos y comercializamos artículos sostenibles, como botellas reutilizables y
+                    bolsas ecológicas, promoviendo la economía circular y reduciendo el impacto ambiental.</p>
+            </section>
+        </article>
+
+        <article class="footer__credits">
+            <section class="footer__social">
+                <h3 class="footer__title--social">Nuestras Redes Sociales:</h3>
+                <div class="footer__group--redes">
+                    <a href="#">
+                        <img src="{{ asset('img/footer/facebook.png') }}" alt="facebook">
+                    </a>
+                    <a href="#">
+                        <img src="{{ asset('img/footer/twitter.png') }}" alt="twitter">
+                    </a>
+                    <a href="#">
+                        <img src="{{ asset('img/footer/youtube.png') }}" alt="youtube">
+                    </a>
+                    <a href="#">
+                        <img src="{{ asset('img/footer/instagram.png') }}" alt="instagram">
+                    </a>
+                </div>
+            </section>
+            <section class="footer__copyright">
+                <p>© 2025 ECOCREATIONS S.A.C. Derechos parcialmente Reservados</p>
+            </section>
+        </article>
     </footer>
 </body>
 
