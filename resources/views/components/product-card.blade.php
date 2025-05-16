@@ -1,5 +1,7 @@
 <article class="card">
-    <img id='{{$pro->id}}' class="product-img" src="{{asset('img/login/'. $pro->imgpro)}}" alt="{{$pro->nombre}}">
+    <a href="{{route('productos.details',$pro->id)}}" >
+        <img id='{{$pro->id}}' class="product-img" src="{{asset('img/login/'. $pro->imgpro)}}" alt="{{$pro->nombre}}">
+    </a>
     <div class="product-data">
         <p class="product-title">{{$pro->nompro}}</p>
         <p class="product-description">{{$pro->descpro}}</p>
@@ -15,5 +17,6 @@
                 Añadir al carrito
             </div>
         </div>
+
     </div>
 </article>

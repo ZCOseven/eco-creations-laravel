@@ -12,4 +12,9 @@ class ProductoController extends Controller
         $products = Producto::where('estpro','activo')->get();
         return view('products.index',compact('products'));
     }
+
+    public function show(Producto $product){
+        $product->load('categoria');
+        return view('products.details',compact('product'));
+    }
 }
