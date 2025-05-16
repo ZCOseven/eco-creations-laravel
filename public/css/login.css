@@ -9,6 +9,8 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .login-page__overlay {
@@ -88,6 +90,7 @@
     font-family: "Poppins", sans-serif;
     outline: none;
     transition: border-color 0.3s ease-in-out;
+    box-sizing: border-box;
 }
 
 .login-page__input:focus {
@@ -124,4 +127,15 @@
     border: 1px solid #3B89FF;
     color: #3B89FF;
     box-shadow: 0 8px 10px rgba(59, 137, 255, 0.25);
+}
+
+@media screen and (max-width: 768px) {
+    .login-page__image {
+        display: none;
+    }
+
+    .login-page__container{
+        width: 80%;
+    }
+
 }

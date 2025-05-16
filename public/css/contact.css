@@ -15,11 +15,11 @@
     flex-direction: column;
     justify-content: center;
     gap: 16px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 }
 
 .contact-page__form-element {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     max-width: 45em;
     padding: 50px 40px;
     display: flex;
@@ -40,7 +40,7 @@
 
 .contact-page__description {
     font-size: 16px;
-    color: #3B89FF;
+    color: #3b89ff;
     text-align: center;
 }
 
@@ -59,14 +59,14 @@
 .contact-page__input {
     padding: 10px 12px;
     font-size: 14px;
-    border: 1px solid #B7C0CD;
+    border: 1px solid #b7c0cd;
     border-radius: 6px;
     outline: none;
     transition: border-color 0.3s ease-in-out;
 }
 
 .contact-page__input:focus {
-    border-color: #3B89FF;
+    border-color: #3b89ff;
     box-shadow: 0 0 5px rgba(59, 137, 255, 0.25);
 }
 
@@ -78,9 +78,9 @@
 .contact-page__submit {
     padding: 10px 30px;
     font-size: 15px;
-    color: #FFFFFF;
-    background-color: #3B89FF;
-    border: 1px solid #3B89FF;
+    color: #ffffff;
+    background-color: #3b89ff;
+    border: 1px solid #3b89ff;
     border-radius: 6px;
     transition: all 0.3s ease-out;
     width: 100%;
@@ -88,7 +88,7 @@
 
 .contact-page__submit:hover {
     background-color: transparent;
-    color: #3B89FF;
+    color: #3b89ff;
     box-shadow: 0 8px 10px rgba(59, 137, 255, 0.25);
 }
 
@@ -127,7 +127,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     padding: 16px;
     border-radius: 6px;
     width: 100%;
@@ -152,5 +152,40 @@
 
 ::placeholder {
     font-family: "Poppins", sans-serif;
-    color: #A5ABB3;
+    color: #a5abb3;
+}
+
+@media screen and (max-width: 1250px) {
+    .contact-page__form-element {
+        width: 26rem;
+        transform: translateX(75px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-page__form {
+        background-image: url("../img/contact/bg-image-contact.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .contact-page__form {
+        align-items: center;
+    }
+
+    .contact-page__form-element {
+        width: 80%;
+        transform: translateX(0px);
+    }
+
+    .contact-page__services {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .contact-page__form-element {
+        width: 95%;
+        padding: 50px 30px;
+    }
 }
