@@ -27,7 +27,7 @@
         <nav class="nav">
             <ul class="list">
                 <li class="list-item"><a class="link" href="#inicio">Inicio</a></li>
-                <li class="list-item"><a class="link active" href="#productos">Productos</a></li>
+                <li class="list-item"><a class="link active" href="{{route('productos.index')}}">Productos</a></li>
                 <li class="list-item"><a class="link" href="../nosotros.html">Nosotros</a></li>
                 <li class="list-item"><a class="link" href="../contacts.html">Contacto</a></li>
                 <li class="list-item"><a class="link" href="../404.html">404</a></li>
