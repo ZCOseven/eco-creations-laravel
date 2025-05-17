@@ -153,9 +153,11 @@ main{
 
 .nav-category {
     width: 100%;
+    top: 6rem;
     color: var(--text-primary);
     font-size: var(--fsize-sub-nav);
-    position: relative;
+    position: sticky;
+    background-color: #FFFFFF;
     border-bottom: 1px solid var(--border-color-light-green);
 }
 

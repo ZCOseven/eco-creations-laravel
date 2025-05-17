@@ -27,10 +27,10 @@
         </a>
         <nav class="nav">
             <ul class="list">
-                <li class="list-item"><a class="link" href="#inicio">Inicio</a></li>
+                <li class="list-item"><a class="link" href="{{route('home')}}">Inicio</a></li>
                 <li class="list-item"><a class="link active" href="{{route('productos.index')}}">Productos</a></li>
-                <li class="list-item"><a class="link" href="../nosotros.html">Nosotros</a></li>
-                <li class="list-item"><a class="link" href="../contacts.html">Contacto</a></li>
+                <li class="list-item"><a class="link" href="{{route('about')}}">Nosotros</a></li>
+                <li class="list-item"><a class="link" href="{{route('contact')}}">Contacto</a></li>
                 <li class="list-item cart-link show-cart">
                     <svg class="" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -58,10 +58,10 @@
     </header>
 
     <ul class="list-mobile">
-        <li class="list-item"><a class="link" href="#inicio">Inicio</a></li>
-        <li class="list-item"><a class="link active" href="#productos">Productos</a></li>
-        <li class="list-item"><a class="link" href="../nosotros.html">Nosotros</a></li>
-        <li class="list-item"><a class="link" href="../contacts.html">Contacto</a></li>
+        <li class="list-item"><a class="link" href="{{route('home')}}">Inicio</a></li>
+        <li class="list-item"><a class="link active" href="{{route('productos.index')}}">Productos</a></li>
+        <li class="list-item"><a class="link" href="{{route('about')}}">Nosotros</a></li>
+        <li class="list-item"><a class="link" href="{{route('contact')}}">Contacto</a></li>
         <li class="list-item cart-link show-cart">
             <svg class="" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -124,38 +124,38 @@
             <section class="footer__map">
                 <h3 class="footer__title">Mapa</h3>
                 <div class="footer__frame-group">
-                    <a href="#" class="footer__link--enlaces">Inicio</a>
+                    <a href="{{route('home')}}" class="footer__link--enlaces">Inicio</a>
                 </div>
                 <div class="footer__frame-group">
-                    <a href="#" class="footer__link--enlaces">Productos</a>
+                    <a href="{{route('productos.index')}}" class="footer__link--enlaces">Productos</a>
                 </div>
                 <div class="footer__frame-group">
-                    <a href="#" class="footer__link--enlaces">Nosotros</a>
+                    <a href="{{route('about')}}" class="footer__link--enlaces">Nosotros</a>
                 </div>
                 <div class="footer__frame-group">
-                    <a href="#" class="footer__link--enlaces">Contacto</a>
+                    <a href="{{route('contact')}}" class="footer__link--enlaces">Contacto</a>
                 </div>
             </section>
 
             <section class="footer__categories">
                 <h3 class="footer__title">Categorías</h3>
                 <div class="footer__frame-group">
-                    <a href="#" class="footer__link--enlaces">Botellas</a>
+                    <a href="{{route('productos.index')}}" class="footer__link--enlaces">Botellas</a>
                 </div>
                 <div class="footer__frame-group">
-                    <a href="#" class="footer__link--enlaces">Bolsas</a>
+                    <a href="{{route('productos.index')}}" class="footer__link--enlaces">Bolsas</a>
                 </div>
                 <div class="footer__frame-group">
-                    <a href="#" class="footer__link--enlaces">Hogar</a>
+                    <a href="{{route('productos.index')}}" class="footer__link--enlaces">Hogar</a>
                 </div>
                 <div class="footer__frame-group">
-                    <a href="#" class="footer__link--enlaces">Accesorios</a>
+                    <a href="{{route('productos.index')}}" class="footer__link--enlaces">Accesorios</a>
                 </div>
             </section>
 
             <section class="footer__nosotros">
                 <figure>
-                    <img src="../img/footer/isotipo.png" alt="isotipo" width="50px" height="50px">
+                    <img src="{{ asset('img/footer/isotipo.png') }}" alt="isotipo" width="50px" height="50px">
                 </figure>
                 <h3 class="footer__title footer__title--nosotros">ECOCREATIONS</h3>
                 <p>ECOCREATIONS S.A.C. abrió sus puertas en 2004, transformando el concepto de productos ecológicos
