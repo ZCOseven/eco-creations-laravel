@@ -9,7 +9,8 @@
 
 <article class="contact-page">
     <section class="contact-page__form">
-        <form action="#" class="contact-page__form-element">
+        <form action="{{ route('contact.send') }}" method="POST" class="contact-page__form-element">
+            @csrf
             <h2 class="contact-page__title">CONTÁCTANOS</h2>
             <p class="contact-page__description">Déjanos tus datos y te escribimos pronto </p>
 

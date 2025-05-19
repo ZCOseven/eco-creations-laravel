@@ -5,13 +5,11 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('pages.contact');
-});
 
 Route::get('/' , [PageController::class, 'home'])->name('home');
 Route::get('/nosotros' , [PageController::class, 'about'])->name('about');
 Route::get('/contacto' , [PageController::class, 'contact'])->name('contact');
+Route::post('/contacto' , [PageController::class, 'sendContact'])->name('contact.send');
 
 
 Route::get('/productos', [ProductoController::class,'index'])->name('productos.index');
