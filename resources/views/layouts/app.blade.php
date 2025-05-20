@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="{{ asset('css/var.css') }}">
     <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
     <link rel="stylesheet" href="{{ asset('css/header.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/carrito.css') }}">
     @stack('styles')
-
+    @livewireStyles
 </head>
 
 <body>
@@ -49,6 +50,8 @@
             </ul>
         </nav>
     </header>
+    
+    @livewire('carrito')
 
     <main>
         @yield('content') <!-- Contenido que se añadira dinamicamente -->
@@ -57,6 +60,8 @@
     <footer>
 
     </footer>
+    @livewireScripts
+    <script src="{{ asset('js/cart.js') }}"></script>
 </body>
 
 </html>

@@ -1,3 +1,4 @@
+
 @extends('layouts.app')
 @section('title', 'About us')
 
@@ -10,6 +11,7 @@
 
 <h1>NOSOTROS</h1>
 <section class="c-p-mision-vision">
+
     <section class="c-mision">
         <h2>Misión</h2>
         <p>En EcoCreations, nos dedicamos a ofrecer productos innovadores y sostenibles elaborados a
