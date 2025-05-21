@@ -180,8 +180,8 @@ main {
 
 .c-p-valores {
     position: relative;
-    width: 350px;
-    height: 350px;
+    width: 80%;
+    height: 80%;
     margin: 3rem auto;
     background: #6AA16D;
     border-radius: 60% 40% 30% 70% / 50% 60% 40% 50%;
@@ -227,6 +227,7 @@ main {
 
 .contenido-valores img {
     width: 100px;
+    margin: auto;
     height: auto;
     margin-bottom: 1rem;
 }

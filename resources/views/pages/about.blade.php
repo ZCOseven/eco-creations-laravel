@@ -67,7 +67,7 @@
                 </div>
             </section>
             <section class="c-p-valores">
-                <div class="contenido-valores">innovación
+                <div class="contenido-valores">
                     <img src="{{ asset('img/nosotros/innovación.png') }}" alt="">
                     <h2>Innovación</h2>
                 </div>
