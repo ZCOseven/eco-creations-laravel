@@ -20,6 +20,6 @@
 
     </div>
 </article>
- -->
-<!-- 
+
+
   <button wire:click="$emitTo('carrito', 'addCart', 1)">Añadir Producto de prueba</button> -->
