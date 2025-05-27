@@ -12,8 +12,30 @@ class ClienteController extends Controller
      */
     public function index()
     {
-        
+
     }
+
+    public function guardar(Request $request)
+    {
+        $request->validate([
+            'nomcli' => 'required|string|max:40',
+            'apecli' => 'required|string|max:40',
+            'dnicli' => 'required|string|max:15',
+            'celcli' => 'required|string|max:13',
+            'dircli' => 'required|string|max:150',
+        ]);
+
+        Cliente::create([
+            'nomcli' => $request->nomcli,
+            'apecli' => $request->apecli,
+            'dnicli' => $request->dnicli,
+            'celcli' => $request->celcli,
+            'dircli' => $request->dircli,
+        ]);
+
+        return response()->json(['success' => true]);
+    }
+
 
     /**
      * Show the form for creating a new resource.

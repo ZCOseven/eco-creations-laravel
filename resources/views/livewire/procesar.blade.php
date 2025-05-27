@@ -1,3 +1,8 @@
+<head>
+    ...
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+</head>
+
 <section>
     <section class="d-flex align-items-center g-1 mb-1 back">
         <a href="{{route('productos.index')}}">
@@ -56,32 +61,6 @@
             </div>
         </fieldset>
         <fieldset>
-            <legend>Metodo de pago</legend>
-            <p>Metodo de pago</p>
-            <div class="form-group mb-small">
-                <label for="">Informacion de tarjeta</label>
-                <input class="control" type="text" name="number-code" id="number-code"
-                    placeholder="XXXX-XXXX-XXXX-XXXX">
-                @error('number-code')
-                    <p class="alert-error">{{$message}}</p>
-                @enderror
-            </div>
-            <div class="form-group">
-                <div class="d-flex g-small">
-                    <input class="flex-full control" type="text" name="fecha" id="fecha" placeholder="fec">
-                    @error('fecha')
-                        <p class="alert-error">{{$message}}</p>
-                    @enderror
-
-                    <input class="flex-full control" type="text" name="code" id="code" placeholder="code">
-                    @error('code')
-                        <p class="alert-error">{{$message}}</p>
-                    @enderror
-                </div>
-            </div>
-            <button type="submit" class="btn btn-green">Realizar Compra</button>
-        </fieldset>
-        <fieldset>
             <legend>Método de pago</legend>
             <p>Método de pago</p>
 
@@ -97,7 +76,6 @@
 
                     </article>
                 @endforeach
-                <!-- Contenedor único para el botón PayPal con total real -->
                 <div id="paypal-button-container" data-total="{{ number_format($total, 2, '.', '') }}"></div>
             @else
                 <p>El carrito está vacío.</p>
